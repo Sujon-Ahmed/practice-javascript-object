@@ -6,11 +6,15 @@ In JavaScript, an object is a standalone entity, with properties and type. Compa
 
 The values are written as name:value pairs (name and value separated by a colon).
 
+_🔰 It is a common practice to declare objects with the const keyword._
 
-*🔰 It is a common practice to declare objects with the const keyword.*
-
-``` javascript
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+```javascript
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
 ```
 
 In JavaScript, almost "everything" is an object.
@@ -28,30 +32,29 @@ In JavaScript, almost "everything" is an object.
 All JavaScript values, except primitives, are objects.
 
 ## JavaScript Primitives
+
 A primitive value is a value that has no properties or methods.
 
 `3.14` is a primitive value
 
 A primitive data type is data that has a primitive value.
 
-JavaScript defines 7 types of primitive data types:
+<details>
+<summary>JavaScript defines 7 types of primitive data types:</summary>
+* string
+* number
+* boolean
+* null
+* undefined
+* symbol
+* bigint
+</details>
 
-- **string**
-- **number**
-- **boolean**
-- **null**
-- **undefined**
-- **symbol**
-- **bigint**
-
-|   Value           |   Type            |   Comment                         |
-|-------------------|-------------------|-----------------------------------|
-|   "Hello"         |   string          |   "Hello" is always "Hello"       |
-|   3.14            |   number          |   3.14 is always 3.14             |
-|   true            |   boolean         |   true is always true             |
-|   false           |   boolean         |   false is always false           |
-|   null            |   null (object)   |   null is always null             |
-|   undefined       |   undefined       |   undefined is always undefined   |
-
-
-
+| Value     | Type          | Comment                       |
+| --------- | ------------- | ----------------------------- |
+| "Hello"   | string        | "Hello" is always "Hello"     |
+| 3.14      | number        | 3.14 is always 3.14           |
+| true      | boolean       | true is always true           |
+| false     | boolean       | false is always false         |
+| null      | null (object) | null is always null           |
+| undefined | undefined     | undefined is always undefined |
