@@ -21,4 +21,8 @@ const person = {
 //console.log(person.name); // dot notation
 //console.log(person['age']); // array notation
 
-console.log(person.fullName());
+// console.log(person.fullName());
+
+const { firstName, lastName, eye, age} = person; // object destructuring 
+
+console.log(`I am ${person.fullName()}`);
