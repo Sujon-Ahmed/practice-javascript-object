@@ -70,5 +70,42 @@ The `this` keyword refers to different objects depending on how it is used:
 
 > `this` is not a variable. It is a keyword. You cannot change the value of `this`.
 
+## JavaScript Accessors (Getters and Setters)
+ECMAScript 5 (ES5 2009) introduced Getter and Setters.
+
+Getters and setters allow you to define Object Accessors (Computed Properties).
 
 
+### Getter Example
+``` js
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
+
+// Display data from the object using a getter:
+document.getElementById("demo").innerHTML = person.lang;
+```
+
+### Setter Example
+```js
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "",
+  set lang(lang) {
+    this.language = lang;
+  }
+};
+
+// Set an object property using a setter:
+person.lang = "en";
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.language;
+```
