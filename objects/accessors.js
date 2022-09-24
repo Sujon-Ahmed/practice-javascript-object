@@ -1,12 +1,26 @@
 // getter 
 
+// const person = {
+//     firstName: 'Jhon',
+//     lastName: 'Doe',
+//     language: 'en',
+//     get lang() {
+//         return this.language;
+//     }
+// };
+
+// console.log(person.lang);
+
+// setter
 const person = {
     firstName: 'Jhon',
     lastName: 'Doe',
-    language: 'en',
-    get lang() {
-        return this.language;
+    language: '',
+    set lang(lang) {
+        this.language = lang;
     }
 };
 
-console.log(person.lang);
+person.lang = 'en';
+
+console.log(person.language);
